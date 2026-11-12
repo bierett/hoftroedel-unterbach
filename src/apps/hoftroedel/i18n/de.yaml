@@ -1,0 +1,72 @@
+messages:
+  brand: Hoftrödel Unterbach
+  eyebrow: Samstag, 19. September 2026 · ab 11 Uhr
+  title:
+    line1: Unterbacher
+    line2: Hoftrödel.
+    line3: 19.09.2026
+  intro: Am Samstag, 19. September 2026, ab 11 Uhr wird Unterbach zum Flohmarkt. Die Stände stehen auf privaten Grundstücken und in Garagen. Komm vorbei, schlendere von Tür zu Tür und stöbere nach Fundstücken.
+  event:
+    participationTitle: Mit einem eigenen Stand teilnehmen
+    participation: Du wohnst in Unterbach und möchtest selbst mittrödeln? Die Teilnahme ist kostenlos. Du baust deinen Stand selbst auf und bestimmst deine Öffnungszeiten.
+    mapTitle: Karte und Adressliste
+    mapDescription: Die Karte ist für die angemeldeten Stände vorgesehen. Eine Adressliste ergänzt die Karte. Wenn du der Veröffentlichung deiner Standadresse in der Liste widersprichst, erscheint dein Stand nur auf der Karte. Die Namen der Teilnehmenden werden nicht veröffentlicht.
+    deadlineTitle: Anmeldefrist
+    deadline: Melde deinen Stand bis zum 18. September 2026 an, damit er bei der Kartenerstellung berücksichtigt werden kann.
+  registration:
+    privacyNote: Informationen zur Verarbeitung deiner Angaben findest du in unseren
+    privacyLink: Datenschutzhinweisen.
+    open: Stand anmelden
+    description: Trage die Adresse deines Standes und deine E-Mail-Adresse ein. Die Teilnahme ist kostenlos.
+    close: Anmeldung schließen
+    address: Standadresse
+    addressPlaceholder: Straße und Hausnummer in Unterbach
+    addressHelp: Tippe mindestens zwei Zeichen und wähle deine Adresse aus. Fehlt sie, kannst du sie selbst eingeben.
+    addressEmpty: Keine passende Adresse gefunden. Du kannst deine Adresse manuell eingeben.
+    email: Deine E-Mail-Adresse
+    emailPlaceholder: name@beispiel.de
+    mapOnlyLabel: Meine Standadresse nur auf der Karte anzeigen, nicht in der Adressliste.
+    note: Das Formular öffnet eine vorausgefüllte E-Mail in deinem Mailprogramm. Sende sie dort ab, um deinen Stand anzumelden.
+    submit: E-Mail vorbereiten
+    prepared: Bitte sende die vorbereitete E-Mail in deinem Mailprogramm ab. Hier wurde noch keine Anmeldung versendet.
+    subject: Anmeldung zum Unterbacher Hoftrödel am 19. September 2026
+    mailIntro: Ich möchte meinen Stand für den Unterbacher Hoftrödel am 19. September 2026 anmelden.
+    publication: Veröffentlichung der Standadresse
+    mapOnlyValue: Nur auf der Karte
+    listValue: Auf der Karte und in der Adressliste
+  art:
+    title: Ein kleiner Hof voller Fundstücke
+    description: Illustration von Unterbacher Häusern mit einem Trödeltisch, einer Lampe, Büchern und einer Pflanze.
+    caption: Stöbern. Entdecken. Nachbarn treffen.
+  footer:
+    navigation: Weitere Informationen
+    name: Hoftrödel Unterbach
+    note: Von Tür zu Tür. Von Mensch zu Mensch.
+  legal:
+    navigation: Rechtliche Informationen
+    imprint:
+      title: Impressum
+      placeholder: "Die Angaben zum Betreiber und zur Kontaktaufnahme werden hier ergänzt. Diese Seite ist noch nicht vollständig."
+    privacy:
+      title: Datenschutz
+      placeholder: "Die Datenschutzerklärung wird hier ergänzt, sobald die Angaben zum Verantwortlichen, zum Hosting und zur Verarbeitung personenbezogener Daten vorliegen. Diese Seite ist noch nicht vollständig."
+  contact:
+    title: Kontakt
+    intro: Du hast Fragen zum Hoftrödel Unterbach?
+    placeholder: Unsere Kontaktmöglichkeiten werden hier in Kürze ergänzt.
+
+  map:
+    title: Karte
+    demoTitle: Demo-Standort
+    demoNotice: Kein tatsächliches Hoftrödel-Angebot.
+    demoLocation: Demo-Standort – kein echtes Angebot
+    closeAddress: Adressanzeige schließen
+    intro: Entdecke Unterbach auf der Karte. Die Markierungen zeigen Demo-Standorte und keine tatsächlichen Hoftrödel-Angebote. Klicke auf eine Gruppe, um die einzelnen Standorte zu sehen.
+    open: Zur großen Karte
+    close: Karte verkleinern und zur Startseite zurückkehren
+    frameTitle: basemap.de-Vektorkarte von Düsseldorf-Unterbach
+    loading: Karte wird geladen …
+    error: Die Karte konnte nicht geladen werden. Bitte lade die Seite erneut.
+
+  header:
+    navigation: Hauptnavigation

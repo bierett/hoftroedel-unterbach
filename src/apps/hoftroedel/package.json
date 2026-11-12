@@ -1,0 +1,17 @@
+{
+    "name": "hoftroedel",
+    "private": true,
+    "dependencies": {
+        "@chakra-ui/react": "catalog:",
+        "@open-pioneer/base-theme": "catalog:",
+        "@open-pioneer/geolocation": "catalog:",
+        "@open-pioneer/map": "catalog:",
+        "@open-pioneer/map-navigation": "catalog:",
+        "@open-pioneer/map-ui-components": "catalog:",
+        "@open-pioneer/notifier": "catalog:",
+        "@open-pioneer/runtime": "catalog:",
+        "ol": "catalog:",
+        "ol-mapbox-style": "^13.9.0",
+        "react-router": "^8.5.1"
+    }
+}

@@ -1,0 +1,85 @@
+diff --git a/dist/components/portal/portal.js b/dist/components/portal/portal.js
+index b84fcf7fd1de1768907dbc57fb3c8dd3e4fc0fc8..72a93c3e4e5b9fbdec376d2ffb7acf82b4285df3 100644
+--- a/dist/components/portal/portal.js
++++ b/dist/components/portal/portal.js
+@@ -9,15 +9,15 @@ var Portal = (props) => {
+ 	const { children, disabled } = props;
+ 	const [container, setContainer] = useState(props.container?.current);
+ 	const isServer = useSyncExternalStore(subscribe, () => false, () => true);
+-	const { getRootNode } = useEnvironmentContext();
++	const { getRootNode, getPortalNode } = useEnvironmentContext();
+ 	useEffect(() => {
+ 		setContainer(() => props.container?.current);
+ 	}, [props.container]);
+ 	if (isServer || disabled) return /* @__PURE__ */ jsx(Fragment$1, { children });
+-	const mountNode = container ?? getPortalNode(getRootNode);
++	const mountNode = container ?? getPortalNode?.() ?? getContainer(getRootNode);
+ 	return /* @__PURE__ */ jsx(Fragment$1, { children: Children.map(children, (child) => createPortal(child, mountNode)) });
+ };
+-var getPortalNode = (cb) => {
++var getContainer = (cb) => {
+ 	const node = cb?.();
+ 	const rootNode = node.getRootNode();
+ 	if (isShadowRoot(rootNode)) return rootNode;
+diff --git a/dist/providers/environment/environment-provider.d.ts b/dist/providers/environment/environment-provider.d.ts
+index 46f4a66b6090917ab3804f261410edadedead3bd..b598e839a580d6caa481471e40c0276c3f0a660d 100644
+--- a/dist/providers/environment/environment-provider.d.ts
++++ b/dist/providers/environment/environment-provider.d.ts
+@@ -3,5 +3,6 @@ import { RootNode } from './use-environment-context.js';
+ export interface EnvironmentProviderProps {
+     children?: ReactNode | undefined;
+     value?: RootNode | (() => RootNode) | undefined;
++    portalNode?: Node | undefined;
+ }
+ export declare const EnvironmentProvider: (props: EnvironmentProviderProps) => import("react").JSX.Element;
+diff --git a/dist/providers/environment/environment-provider.js b/dist/providers/environment/environment-provider.js
+index 1580de613a191eaef1c1a3729f6dc607186d6d46..7ab5b692c8d0d19a5bd1b8fc0336dfed664e5b9d 100644
+--- a/dist/providers/environment/environment-provider.js
++++ b/dist/providers/environment/environment-provider.js
+@@ -6,14 +6,15 @@ import { jsx, jsxs } from "react/jsx-runtime";
+ import { getDocument, getWindow } from "@zag-js/dom-query";
+ //#region src/providers/environment/environment-provider.tsx
+ var EnvironmentProvider = (props) => {
+-	const { value, children } = props;
++	const { value, portalNode, children } = props;
+ 	const [spanRef, setSpanRef] = useState();
+ 	const getRootNode = useMemo(() => {
+ 		return () => runIfFn(value) ?? spanRef?.getRootNode() ?? document;
+ 	}, [value, spanRef]);
+ 	const environment = useMemo(() => ({
+ 		getRootNode,
+-		getWindow: () => getWindow(getRootNode()),
++        getPortalNode: () => portalNode || undefined,
++        getWindow: () => getWindow(getRootNode()),
+ 		getDocument: () => getDocument(getRootNode())
+ 	}), [getRootNode]);
+ 	return /* @__PURE__ */ jsxs(EnvironmentContextProvider, {
+diff --git a/dist/providers/environment/use-environment-context.d.ts b/dist/providers/environment/use-environment-context.d.ts
+index 67b730775a75bbab8d8f8d16699ace93d3378c5e..4420ea2eebbb14488e70d5b7b733e5002e30a355 100644
+--- a/dist/providers/environment/use-environment-context.d.ts
++++ b/dist/providers/environment/use-environment-context.d.ts
+@@ -6,6 +6,10 @@ export interface UseEnvironmentContext {
+      * This is used to determine the window and document objects.
+      */
+     getRootNode(): RootNode;
++    /**
++     * Default target for portal content.
++     */
++    getPortalNode(): Node | undefined;
+     /**
+      * The document context for the root node.
+      */
+diff --git a/dist/providers/environment/use-environment-context.js b/dist/providers/environment/use-environment-context.js
+index 474fdd6428cb8b72a0d2d8cf65b11668885df5d0..1ebb56443078be04bd3f97333d92dc65d1f01c0e 100644
+--- a/dist/providers/environment/use-environment-context.js
++++ b/dist/providers/environment/use-environment-context.js
+@@ -9,7 +9,8 @@ var [EnvironmentContextProvider, useEnvironmentContext] = createContext({
+ 	defaultValue: {
+ 		getRootNode: () => document,
+ 		getDocument: () => document,
+-		getWindow: () => window
++		getWindow: () => window,
++		getPortalNode: () => document
+ 	}
+ });
+ //#endregion
