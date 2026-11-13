@@ -1,5 +1,6 @@
 # List of allowed dependency licenses.
 allowedLicenses:
+  - "OFL-1.1"
   - "Apache-2.0"
   - "MIT"
   - "Zlib"

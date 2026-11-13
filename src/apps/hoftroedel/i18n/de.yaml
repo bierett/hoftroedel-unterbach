@@ -64,7 +64,7 @@ messages:
     intro: Entdecke Unterbach auf der Karte. Die Markierungen zeigen Demo-Standorte und keine tatsächlichen Hoftrödel-Angebote. Klicke auf eine Gruppe, um die einzelnen Standorte zu sehen.
     open: Zur großen Karte
     close: Karte verkleinern und zur Startseite zurückkehren
-    frameTitle: basemap.de-Vektorkarte von Düsseldorf-Unterbach
+    frameTitle: basemap.de-Karte von Düsseldorf-Unterbach
     loading: Karte wird geladen …
     error: Die Karte konnte nicht geladen werden. Bitte lade die Seite erneut.
 
