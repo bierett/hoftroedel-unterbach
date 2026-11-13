@@ -175,7 +175,7 @@ catalogs:
       version: 4.0.2
     '@open-pioneer/check-pnpm-duplicates':
       specifier: ^0.5.0
-      version: 0.5.0
+      version: 0.5.1
     '@open-pioneer/create-license-report':
       specifier: ^0.1.0
       version: 0.1.0
@@ -326,7 +326,7 @@ importers:
         version: 4.0.2
       '@open-pioneer/check-pnpm-duplicates':
         specifier: 'catalog:'
-        version: 0.5.0
+        version: 0.5.1
       '@open-pioneer/create-license-report':
         specifier: 'catalog:'
         version: 0.1.0
@@ -953,13 +953,17 @@ packages:
   '@open-pioneer/chakra-snippets@4.9.0':
     resolution: {integrity: sha512-sjbSUg7iE9A+xVzvsEAe2Tft6TkNtjKY9dHqbBRBk19PU5ui02VJgbp8vF3Ah8RWAeN3N5e5KgcvRv1edj0XGw==}
 
-  '@open-pioneer/check-pnpm-duplicates@0.5.0':
-    resolution: {integrity: sha512-6FofyXqdPDSZmKnDYcVahNoRbZWnywZ6npW4oW1gsqIQNH79+6YQUhyE8t66uANLNV3QaqYmYQkxeIJMQsNVLg==}
+  '@open-pioneer/check-pnpm-duplicates@0.5.1':
+    resolution: {integrity: sha512-AmaEXnNi+MB4V/S1Qym9vZ4Bqrr1G4uZqrn8xmv9fXozVTZ3aCdwGAJUH9w23ZwW+6XTWoiz8lZr3NDnq5pWsQ==}
     engines: {node: '>= 20', pnpm: '>= 11'}
     hasBin: true
 
   '@open-pioneer/cli-common@0.1.0':
     resolution: {integrity: sha512-sQkHQBimm6XdP+vmo7AyH3IqYoyX8Sx/C9e5NSli9YYoz1H31CsVz2oDwZN8J3P2BZ7yedrTr5X6YdLvuMujfA==}
+    engines: {node: '>= 20'}
+
+  '@open-pioneer/cli-common@0.1.1':
+    resolution: {integrity: sha512-+FLlkAvLWJRSIcihxprGoFCxMVkDqnZnO6hqgAPifP2C52wBonYzzcwwgPSzVDlVj5Wle2LCW3kaJjvY+vVXaw==}
     engines: {node: '>= 20'}
 
   '@open-pioneer/core@4.9.0':
@@ -3972,13 +3976,17 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@open-pioneer/check-pnpm-duplicates@0.5.0':
+  '@open-pioneer/check-pnpm-duplicates@0.5.1':
     dependencies:
-      '@open-pioneer/cli-common': 0.1.0
+      '@open-pioneer/cli-common': 0.1.1
       commander: 15.0.0
       js-yaml: 5.5.0
 
   '@open-pioneer/cli-common@0.1.0':
+    dependencies:
+      chalk: 6.0.1
+
+  '@open-pioneer/cli-common@0.1.1':
     dependencies:
       chalk: 6.0.1
 
