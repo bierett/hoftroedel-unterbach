@@ -14,6 +14,23 @@ pnpm dev       # Entwicklungsserver starten (http://localhost:5173/)
 pnpm build     # Produktionsbuild nach dist/www
 ```
 
+## Smoke-Tests
+
+Die Playwright-Tests prüfen Navigation, Karte und Anmeldeformular in Chromium mit Desktop- und Handy-Ansicht.
+Sie laufen gegen den Produktionsbuild. Der externe basemap.de-Stil wird durch einen festen Teststil ersetzt;
+die Verfügbarkeit des Kartendienstes wird damit nicht geprüft. Es werden keine Anmeldungen versendet.
+
+```bash
+pnpm exec playwright install chromium # einmalig nach Installation bzw. Playwright-Update
+pnpm build
+pnpm test:smoke
+pnpm exec playwright show-report
+```
+
+Der Vorschau-Server auf Port 4173 startet und endet automatisch. Bei fehlgeschlagenen Tests enthalten
+`playwright-report/` und `test-results/` den Bericht, Screenshots und Traces. GitHub Actions lädt diese
+als Artefakt hoch. Die Smoke-Tests sind Teil des bestehenden verpflichtenden PR-Checks.
+
 ## Aufbau
 
 - `src/index.html`: die Seite mit `<hoftroedel-app>`
