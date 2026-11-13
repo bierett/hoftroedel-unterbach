@@ -1,5 +1,10 @@
 # Hoftrödel Unterbach
 
+[![Build und Tests](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/pr-checks.yml/badge.svg?branch=main)](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/pr-checks.yml?query=branch%3Amain)
+[![Dependency-Audit](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/audit-dependencies.yml/badge.svg?branch=main)](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/audit-dependencies.yml?query=branch%3Amain)
+[![Lizenzen](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/license-check.yml/badge.svg?branch=main)](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/license-check.yml?query=branch%3Amain)
+[![CodeQL](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/bierett/hoftroedel-unterbach/actions/workflows/codeql.yml?query=branch%3Amain)
+
 Infoseite zum Hoftrödel in Düsseldorf-Unterbach, gebaut mit dem [Open Pioneer Trails Starter](https://github.com/open-pioneer/trails-starter) und Chakra UI.
 
 Das Projekt enthält genau eine App (`src/apps/hoftroedel`) und keine eigenen Pakete.
