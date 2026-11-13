@@ -172,7 +172,7 @@ catalogs:
       version: 4.0.2
     '@open-pioneer/build-support':
       specifier: ^4.0.2
-      version: 4.0.2
+      version: 4.0.3
     '@open-pioneer/check-pnpm-duplicates':
       specifier: ^0.5.0
       version: 0.5.0
@@ -323,7 +323,7 @@ importers:
         version: 4.0.2(sass@1.106.1)(supports-color@7.2.0)(typescript@6.0.3)
       '@open-pioneer/build-support':
         specifier: 'catalog:'
-        version: 4.0.2
+        version: 4.0.3
       '@open-pioneer/check-pnpm-duplicates':
         specifier: 'catalog:'
         version: 0.5.0
@@ -946,8 +946,8 @@ packages:
       typescript:
         optional: true
 
-  '@open-pioneer/build-support@4.0.2':
-    resolution: {integrity: sha512-boFkiF0HC0DM/ulLTtUC1X74XivnmfJm5Z6e8Bysa7RPgH7UccMA4iDa66QWWg/2SkjzR4sLH8vVgopKgvSXCA==}
+  '@open-pioneer/build-support@4.0.3':
+    resolution: {integrity: sha512-WHUW6XtvDkSVEXIp10SoJM7DeM0eCV9pbQvR9eNku1Yzzk7S243nKXuRlSXXSDYczNWtWWJ/jU0QLUIlgJpQ5A==}
     engines: {node: '>= 20'}
 
   '@open-pioneer/chakra-snippets@4.9.0':
@@ -3916,7 +3916,7 @@ snapshots:
 
   '@open-pioneer/build-common@5.1.0(rollup@4.65.1)':
     dependencies:
-      '@open-pioneer/build-support': 4.0.2
+      '@open-pioneer/build-support': 4.0.3
       '@rollup/pluginutils': 5.5.1(rollup@4.65.1)
       semver: 7.8.5
       zod: 4.6.7
@@ -3937,7 +3937,7 @@ snapshots:
   '@open-pioneer/build-package@5.0.2(sass@1.106.1)(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@open-pioneer/build-common': 5.1.0(rollup@4.65.1)
-      '@open-pioneer/build-support': 4.0.2
+      '@open-pioneer/build-support': 4.0.3
       '@open-pioneer/cli-common': 0.1.0
       '@rollup/plugin-node-resolve': 16.0.3(rollup@4.65.1)
       '@rollup/pluginutils': 5.5.1(rollup@4.65.1)
@@ -3958,7 +3958,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@open-pioneer/build-support@4.0.2': {}
+  '@open-pioneer/build-support@4.0.3': {}
 
   '@open-pioneer/chakra-snippets@4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))':
     dependencies:
