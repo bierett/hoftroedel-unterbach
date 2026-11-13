@@ -27,7 +27,26 @@ allowedLicenses:
 #      - custom: "./licenses/some-package-license.txt"
 #
 # `custom` makes the path relative to this directory instead of the package's directory.
-overrideLicenses: []
+overrideLicenses:
+  # Both packages ship an Unlicense text but omit the package.json license field.
+  - name: "fast-shallow-equal"
+    version: "1.0.0"
+    license: "Unlicense"
+  - name: "react-universal-interface"
+    version: "0.6.2"
+    license: "Unlicense"
+  # License text is missing from the published npm package.
+  - name: "toggle-selection"
+    version: "1.0.6"
+    license: "MIT"
+    licenseFiles:
+      - custom: "./licenses/toggle_selection_mit"
+  # Retrieved from https://raw.githubusercontent.com/Esri/lerc/v3.0/LICENSE
+  - name: "lerc"
+    version: "3.0.0"
+    license: "Apache-2.0"
+    licenseFiles:
+      - custom: "./licenses/lerc_apache-2.0"
 
 # List of additional licenses that are used by the project but are not dependencies itself.
 # E.g. licenses of projects used by react-icons.
