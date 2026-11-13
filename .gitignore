@@ -9,6 +9,8 @@ lerna-debug.log*
 
 .eslintcache
 coverage
+playwright-report
+test-results
 dist
 temp
 node_modules
