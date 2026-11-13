@@ -18,6 +18,7 @@
         "format": "oxfmt",
         "format:check": "oxfmt --check",
         "test": "vitest --passWithNoTests",
+        "test:smoke": "playwright test",
         "prepare": "husky && pnpm check-duplicates"
     },
     "devDependencies": {

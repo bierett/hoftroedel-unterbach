@@ -20,5 +20,12 @@
         "isolatedModules": true,
         "skipLibCheck": true
     },
-    "include": ["vite.config.ts", "oxlint.config.ts", "oxfmt.config.ts", "support"]
+    "include": [
+        "vite.config.ts",
+        "oxlint.config.ts",
+        "oxfmt.config.ts",
+        "playwright.config.ts",
+        "e2e",
+        "support"
+    ]
 }
