@@ -19,6 +19,21 @@ pnpm dev       # Entwicklungsserver starten (http://localhost:5173/)
 pnpm build     # Produktionsbuild nach dist/www
 ```
 
+## Flyer zum Herunterladen
+
+Der Bereich „Hoftrödel zum Weitersagen“ auf der Startseite lädt seine Dateien aus
+`src/public/downloads/`:
+
+- `hoftrödel-unterbach-flyer.pdf`: druckbarer Flyer in DIN A4
+- `hoftrödel-unterbach-flyer.png`: Bild zum Teilen und alternative Vorschau
+- `hoftrödel-unterbach-flyer.webp`: kleinere Datei für die Vorschau
+
+Die Dateien werden unverändert unter ihrer öffentlichen URL ausgeliefert. Sobald sie dort
+verfügbar sind, werden die jeweiligen Download-Buttons beim Laden der Seite automatisch aktiv.
+Für die Bereitstellung über den normalen Build die Dateien vor dem Build hinzufügen.
+Ohne WebP wird PNG für die Vorschau verwendet. Ohne beide Bilder erscheint eine gekennzeichnete Gestaltungsvorschau;
+für fehlende Dateien bleiben die Buttons deaktiviert.
+
 ## Smoke-Tests
 
 Die Playwright-Tests prüfen Navigation, Karte und Anmeldeformular in Chromium mit Desktop- und Handy-Ansicht.

@@ -4,6 +4,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
 import { EventDetails } from "./EventDetails";
+import { FlyerSection } from "./FlyerSection";
 import { HeroComponent } from "./HeroComponent";
 import { ImageComponent } from "./ImageComponent";
 import { MapSection } from "./MapSection";
@@ -47,6 +48,7 @@ export function HomePage() {
             </Box>
             <EventDetails />
             <MapSection />
+            <FlyerSection />
         </>
     );
 }

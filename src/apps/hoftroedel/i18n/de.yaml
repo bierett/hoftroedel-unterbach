@@ -13,6 +13,20 @@ messages:
     mapDescription: Die Karte ist für die angemeldeten Stände vorgesehen. Eine Adressliste ergänzt die Karte. Wenn du der Veröffentlichung deiner Standadresse in der Liste widersprichst, erscheint dein Stand nur auf der Karte. Die Namen der Teilnehmenden werden nicht veröffentlicht.
     deadlineTitle: Anmeldefrist
     deadline: Melde deinen Stand bis zum 18. September 2026 an, damit er bei der Kartenerstellung berücksichtigt werden kann.
+  flyer:
+    title: Hoftrödel zum Weitersagen
+    intro: Mach mit und hilf, den Hoftrödel in Unterbach bekannt zu machen!
+    subtitle: Unser Flyer für Unterbach
+    description: Einfach herunterladen, ausdrucken und im Viertel aufhängen oder digital mit Freunden und Nachbarn teilen.
+    pdfDownload: PDF herunterladen
+    pngDownload: PNG herunterladen
+    note: DIN A4 · Kostenlos
+    pending: Die Downloads stehen hier bereit, sobald die Flyer veröffentlicht sind.
+    placeholder: Gestaltungsvorschau · Der fertige Flyer folgt.
+    previewAlt: Flyer zum Unterbacher Hoftrödel
+    previewLocation: Von Tür zu Tür. Von Mensch zu Mensch.
+    previewTitle: Unterbacher Hoftrödel
+    previewTagline: Stöbern. Entdecken. Nachbarn treffen.
   registration:
     privacyNote: Informationen zur Verarbeitung deiner Angaben findest du in unseren
     privacyLink: Datenschutzhinweisen.

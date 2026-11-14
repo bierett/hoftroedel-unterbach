@@ -31,20 +31,6 @@ export function EventDetails() {
                 <Text mb="16px">{intl.formatMessage({ id: "event.participation" })}</Text>
                 <RegistrationDialog />
             </Box>
-            <Box as="section" aria-labelledby="event-map-title">
-                <Heading
-                    as="h2"
-                    id="event-map-title"
-                    fontFamily="heading"
-                    color="hoftroedel.ink"
-                    fontSize={{ base: "28px", md: "32px" }}
-                    lineHeight="1.2"
-                    mb="16px"
-                >
-                    {intl.formatMessage({ id: "event.mapTitle" })}
-                </Heading>
-                <Text>{intl.formatMessage({ id: "event.mapDescription" })}</Text>
-            </Box>
             <Box
                 as="section"
                 aria-labelledby="deadline-title"
@@ -64,6 +50,20 @@ export function EventDetails() {
                     {intl.formatMessage({ id: "event.deadlineTitle" })}
                 </Heading>
                 <Text>{intl.formatMessage({ id: "event.deadline" })}</Text>
+            </Box>
+            <Box as="section" aria-labelledby="event-map-title">
+                <Heading
+                    as="h2"
+                    id="event-map-title"
+                    fontFamily="heading"
+                    color="hoftroedel.ink"
+                    fontSize={{ base: "28px", md: "32px" }}
+                    lineHeight="1.2"
+                    mb="16px"
+                >
+                    {intl.formatMessage({ id: "event.mapTitle" })}
+                </Heading>
+                <Text>{intl.formatMessage({ id: "event.mapDescription" })}</Text>
             </Box>
         </Stack>
     );
