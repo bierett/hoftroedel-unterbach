@@ -30,7 +30,8 @@ Der Bereich „Hoftrödel zum Weitersagen“ auf der Startseite lädt seine Date
 
 Die Dateien werden unverändert unter ihrer öffentlichen URL ausgeliefert. Sobald sie dort
 verfügbar sind, werden die jeweiligen Download-Buttons beim Laden der Seite automatisch aktiv.
-Für die Bereitstellung über den normalen Build die Dateien vor dem Build hinzufügen.
+Neue oder geänderte Dateien müssen vor dem Build in diesem Ordner liegen und anschließend
+zusammen mit der Website veröffentlicht werden.
 Ohne WebP wird PNG für die Vorschau verwendet. Ohne beide Bilder erscheint eine gekennzeichnete Gestaltungsvorschau;
 für fehlende Dateien bleiben die Buttons deaktiviert.
 
