@@ -75,7 +75,7 @@ overrides:
 
   # Ensure patched packages have the expected version (patch was tested with this version):
   "@chakra-ui/react": "3.37.0"
-  "@ark-ui/react": "5.39.0"
+  "@ark-ui/react": "5.40.0"
   "@zag-js/interact-outside": "1.43.3"
 
   # https://github.com/advisories/GHSA-253c-mchw-3w2r
