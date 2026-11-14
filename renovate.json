@@ -3,9 +3,30 @@
     "extends": ["config:recommended"],
     "packageRules": [
         {
-            "matchPackageNames": ["@open-pioneer/**"],
+            "description": "Group non-major updates for dependencies with versions 1.0.0 and above",
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-            "groupName": "Open Pioneer dependencies"
+            "matchDepTypes": [
+                "dependencies",
+                "devDependencies",
+                "packageManager",
+                "pnpm.catalog.default"
+            ],
+            "matchCurrentVersion": "!/^0/",
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch"
+        },
+        {
+            "description": "Group patch, pin and digest updates for 0.x dependencies",
+            "matchUpdateTypes": ["patch", "pin", "digest"],
+            "matchDepTypes": [
+                "dependencies",
+                "devDependencies",
+                "packageManager",
+                "pnpm.catalog.default"
+            ],
+            "matchCurrentVersion": "/^0/",
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch"
         }
     ]
 }
