@@ -277,7 +277,7 @@ catalogs:
       version: 6.1.4
     sass:
       specifier: ^1.106.1
-      version: 1.106.1
+      version: 1.108.2
     tsx:
       specifier: ^4.23.15
       version: 4.23.15
@@ -320,7 +320,7 @@ importers:
     devDependencies:
       '@open-pioneer/build-package-cli':
         specifier: 'catalog:'
-        version: 4.0.3(sass@1.106.1)(supports-color@7.2.0)(typescript@6.0.3)
+        version: 4.0.3(sass@1.108.2)(supports-color@7.2.0)(typescript@6.0.3)
       '@open-pioneer/build-support':
         specifier: 'catalog:'
         version: 4.0.3
@@ -332,7 +332,7 @@ importers:
         version: 0.1.1
       '@open-pioneer/vite-plugin-pioneer':
         specifier: 'catalog:'
-        version: 7.1.2(@open-pioneer/runtime@4.9.0(@types/react@19.3.0))(rollup@4.65.1)(sass@1.106.1)(supports-color@7.2.0)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+        version: 7.1.2(@open-pioneer/runtime@4.9.0(@types/react@19.3.0))(rollup@4.65.1)(sass@1.108.2)(supports-color@7.2.0)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
       '@testing-library/dom':
         specifier: 'catalog:'
         version: 10.4.2
@@ -362,13 +362,13 @@ importers:
         version: 19.3.0(@types/react@19.3.0)
       '@vitejs/plugin-react':
         specifier: 'catalog:'
-        version: 6.3.0(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+        version: 6.3.0(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       '@vitest/browser-playwright':
         specifier: 'catalog:'
-        version: 5.0.5(playwright@1.64.1)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+        version: 5.0.5(playwright@1.64.1)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
       '@vitest/browser-preview':
         specifier: 'catalog:'
-        version: 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+        version: 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
       fast-glob:
         specifier: 'catalog:'
         version: 3.3.3
@@ -407,7 +407,7 @@ importers:
         version: 6.1.4
       sass:
         specifier: 'catalog:'
-        version: 1.106.1
+        version: 1.108.2
       tsx:
         specifier: 'catalog:'
         version: 4.23.15
@@ -416,10 +416,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)
+        version: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+        version: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       vitest-browser-react:
         specifier: 'catalog:'
         version: 2.3.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(vitest@5.0.5)
@@ -3062,8 +3062,8 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  sass@1.106.1:
-    resolution: {integrity: sha512-kD+Gi66vycZcbJt+42NC4z4PXNMcCajVrJPhqoKKXy5cOBMmJQt052CxIBcRjwYXeImHYOpu/ydWWGZQIenl7A==}
+  sass@1.108.2:
+    resolution: {integrity: sha512-kugK8djotnG9HQRPTOf36asKYlxg8rWWsNLYHOgWDIVOiZQqlRfKBgF4XXM6kfw146kIDMvm57B4GIkvDSyTzA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -3964,9 +3964,9 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@open-pioneer/build-package-cli@4.0.3(sass@1.106.1)(supports-color@7.2.0)(typescript@6.0.3)':
+  '@open-pioneer/build-package-cli@4.0.3(sass@1.108.2)(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
-      '@open-pioneer/build-package': 5.0.3(sass@1.106.1)(supports-color@7.2.0)(typescript@6.0.3)
+      '@open-pioneer/build-package': 5.0.3(sass@1.108.2)(supports-color@7.2.0)(typescript@6.0.3)
       chalk: 6.0.1
       commander: 15.0.0
     transitivePeerDependencies:
@@ -3974,7 +3974,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@open-pioneer/build-package@5.0.3(sass@1.106.1)(supports-color@7.2.0)(typescript@6.0.3)':
+  '@open-pioneer/build-package@5.0.3(sass@1.108.2)(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@open-pioneer/build-common': 5.1.1(rollup@4.65.1)
       '@open-pioneer/build-support': 4.0.3
@@ -3993,7 +3993,7 @@ snapshots:
       rollup-plugin-esbuild: 6.2.1(esbuild@0.28.2)(rollup@4.65.1)(supports-color@7.2.0)
       tinyglobby: 0.2.17
     optionalDependencies:
-      sass: 1.106.1
+      sass: 1.108.2
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -4158,7 +4158,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@open-pioneer/vite-plugin-pioneer@7.1.2(@open-pioneer/runtime@4.9.0(@types/react@19.3.0))(rollup@4.65.1)(sass@1.106.1)(supports-color@7.2.0)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
+  '@open-pioneer/vite-plugin-pioneer@7.1.2(@open-pioneer/runtime@4.9.0(@types/react@19.3.0))(rollup@4.65.1)(sass@1.108.2)(supports-color@7.2.0)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
     dependencies:
       '@open-pioneer/build-common': 5.1.1(rollup@4.65.1)
       '@open-pioneer/runtime': 4.9.0(@types/react@19.3.0)
@@ -4166,14 +4166,14 @@ snapshots:
       esrap: 2.4.0
       js-yaml: 5.5.0
       oxc-resolver: 11.24.2
-      sass: 1.106.1
+      sass: 1.108.2
       tinyglobby: 0.2.17
-      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)
-      vitefu: 1.1.3(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)
+      vitefu: 1.1.3(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       zod: 4.6.7
       zod-validation-error: 5.0.0(zod@4.6.7)
     optionalDependencies:
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
     transitivePeerDependencies:
       - '@typescript-eslint/types'
       - rollup
@@ -4599,7 +4599,7 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
     optionalDependencies:
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
 
   '@testing-library/react@16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
@@ -4665,47 +4665,47 @@ snapshots:
     dependencies:
       '@types/node': 24.19.2
 
-  '@vitejs/plugin-react@6.3.0(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))':
+  '@vitejs/plugin-react@6.3.0(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)
 
-  '@vitest/browser-playwright@5.0.5(playwright@1.64.1)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
+  '@vitest/browser-playwright@5.0.5(playwright@1.64.1)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
     dependencies:
-      '@vitest/browser': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
-      '@vitest/mocker': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      '@vitest/browser': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+      '@vitest/mocker': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       playwright: 1.64.1
       tinyrainbow: 3.2.0
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
     transitivePeerDependencies:
       - bufferutil
       - msw
       - utf-8-validate
       - vite
 
-  '@vitest/browser-preview@5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
+  '@vitest/browser-preview@5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
     dependencies:
       '@testing-library/dom': 10.4.2
       '@testing-library/user-event': 14.6.8(@testing-library/dom@10.4.2)
-      '@vitest/browser': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      '@vitest/browser': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
     transitivePeerDependencies:
       - bufferutil
       - msw
       - utf-8-validate
       - vite
 
-  '@vitest/browser@5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
+  '@vitest/browser@5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)':
     dependencies:
       '@blazediff/core': 1.10.0
-      '@vitest/mocker': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      '@vitest/mocker': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       '@vitest/ui': 5.0.5(vitest@5.0.5)
       '@vitest/utils': 5.0.5
       magic-string: 1.4.3
       pngjs: 7.0.0
       sirv: 3.0.2
       tinyrainbow: 3.2.0
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       ws: 8.22.0
     transitivePeerDependencies:
       - bufferutil
@@ -4713,14 +4713,14 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/mocker@5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))':
+  '@vitest/mocker@5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.0.5
       estree-walker: 3.0.3
       magic-string: 1.4.3
     optionalDependencies:
-      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)
 
   '@vitest/pretty-format@5.0.5':
     dependencies:
@@ -4736,7 +4736,7 @@ snapshots:
       pathe: 2.0.3
       sirv: 3.0.2
       tinyrainbow: 3.2.0
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
 
   '@vitest/utils@5.0.5':
     dependencies:
@@ -6317,7 +6317,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  sass@1.106.1:
+  sass@1.108.2:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
@@ -6495,7 +6495,7 @@ snapshots:
 
   uuid@14.0.3: {}
 
-  vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1):
+  vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -6506,27 +6506,27 @@ snapshots:
       '@types/node': 24.19.2
       esbuild: 0.28.2
       fsevents: 2.3.3
-      sass: 1.106.1
+      sass: 1.108.2
       tsx: 4.23.15
       yaml: 2.9.1
 
-  vitefu@1.1.3(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)):
+  vitefu@1.1.3(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)):
     optionalDependencies:
-      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)
 
   vitest-browser-react@2.3.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(vitest@5.0.5):
     dependencies:
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
-      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
     optionalDependencies:
       '@types/react': 19.3.0
       '@types/react-dom': 19.3.0(@types/react@19.3.0)
 
-  vitest@5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)):
+  vitest@5.0.5(@types/node@24.19.2)(@vitest/browser-playwright@5.0.5)(@vitest/browser-preview@5.0.5)(@vitest/ui@5.0.5)(happy-dom@21.0.4)(jsdom@30.1.3)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))
+      '@vitest/mocker': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -6537,12 +6537,12 @@ snapshots:
       tinybench: 6.2.2
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1)
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 24.19.2
-      '@vitest/browser-playwright': 5.0.5(playwright@1.64.1)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
-      '@vitest/browser-preview': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.106.1)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+      '@vitest/browser-playwright': 5.0.5(playwright@1.64.1)(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
+      '@vitest/browser-preview': 5.0.5(vite@8.3.8(@types/node@24.19.2)(esbuild@0.28.2)(sass@1.108.2)(tsx@4.23.15)(yaml@2.9.1))(vitest@5.0.5)
       '@vitest/ui': 5.0.5(vitest@5.0.5)
       happy-dom: 21.0.4
       jsdom: 30.1.3
