@@ -3,7 +3,7 @@
 
 import { Box, Flex } from "@chakra-ui/react";
 import { Notifier } from "@open-pioneer/notifier";
-import { HashRouter, Navigate, Route, Routes, useLocation } from "react-router";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router";
 import { ContactPage } from "./components/ContactPage";
 import { FooterComponent } from "./components/FooterComponent";
 import { HeaderComponent } from "./components/HeaderComponent";
@@ -14,17 +14,17 @@ import { RegistrationDraftProvider } from "./components/RegistrationDraft";
 
 export function AppUI() {
     return (
-        <HashRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Notifier />
             <RegistrationDraftProvider>
                 <AppLayout />
             </RegistrationDraftProvider>
-        </HashRouter>
+        </BrowserRouter>
     );
 }
 
 function AppLayout() {
-    const isMapPage = useLocation().pathname === "/karte";
+    const isMapPage = useLocation().pathname.replace(/\/+$/, "") === "/karte";
 
     return (
         <Box minH="100svh" w="100%" bg="hoftroedel.paper" color="hoftroedel.ink" fontFamily="body">

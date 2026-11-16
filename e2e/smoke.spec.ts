@@ -36,7 +36,7 @@ test("homepage and navigation work", async ({ page }) => {
     ]) {
         const link = navigation.getByRole("link", { name: title, exact: true });
         await link.click();
-        await expect(page).toHaveURL(new RegExp(`#/${path}$`));
+        await expect(page).toHaveURL(new RegExp(`/${path}$`));
         await expect(page.getByRole("heading", { level: 1, name: title })).toBeVisible();
         await expect(link).toHaveAttribute("aria-current", "page");
     }
@@ -47,7 +47,7 @@ test("homepage and navigation work", async ({ page }) => {
 test("map renders and can be expanded and collapsed", async ({ page }) => {
     await expect(page.locator(".ol-viewport canvas").first()).toBeVisible();
     await page.getByRole("link", { name: "Zur großen Karte", exact: true }).click();
-    await expect(page).toHaveURL(/#\/karte$/);
+    await expect(page).toHaveURL(/\/karte$/);
     await expect(page.locator(".ol-viewport canvas").first()).toBeVisible();
     await expect(
         page
@@ -72,7 +72,7 @@ test("registration retains the draft across both entry points", async ({ page })
     await dialog.getByRole("checkbox").check();
     await expect(dialog.getByRole("link", { name: "Datenschutzhinweisen." })).toHaveAttribute(
         "href",
-        "#/datenschutz"
+        "/datenschutz"
     );
     await dialog.getByRole("button", { name: "Anmeldung schließen" }).click();
     await expect(dialog).not.toBeVisible();
@@ -87,4 +87,27 @@ test("registration retains the draft across both entry points", async ({ page })
     await expect(dialog.getByRole("button", { name: "E-Mail vorbereiten" })).toBeInViewport();
     await dialog.getByRole("button", { name: "Anmeldung schließen" }).click();
     await expect(dialog).not.toBeVisible();
+});
+
+test("browser routes support direct visits, reloads and history navigation", async ({ page }) => {
+    for (const [path, title] of [
+        ["kontakt", "Kontakt"],
+        ["datenschutz", "Datenschutz"],
+        ["impressum", "Impressum"]
+    ]) {
+        await page.goto(`/${path}/`);
+        await expect(page.getByRole("heading", { level: 1, name: title })).toBeVisible();
+        await page.reload();
+        await expect(page.getByRole("heading", { level: 1, name: title })).toBeVisible();
+    }
+    await page.getByRole("banner").getByRole("link", { name: "Hoftrödel Unterbach" }).click();
+    await expect(page).toHaveURL(/\/$/);
+    await page.goBack();
+    await expect(page.getByRole("heading", { level: 1, name: "Impressum" })).toBeVisible();
+    await page.goForward();
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("Unterbacher");
+    await page.goto("/karte/");
+    await expect(page.locator(".ol-viewport canvas").first()).toBeVisible();
+    await page.reload();
+    await expect(page.locator(".ol-viewport canvas").first()).toBeVisible();
 });
