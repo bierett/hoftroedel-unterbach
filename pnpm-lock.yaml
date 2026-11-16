@@ -302,7 +302,7 @@ overrides:
   stylis@<4.3.5: '>= 4.3.5'
   csstype@<3.2.3: '>=3.2.3'
   geotiff@>=3.0.5 <3.1.0-beta.0: ^3.1.0-beta.0
-  '@chakra-ui/react': 3.37.0
+  '@chakra-ui/react': 3.38.0
   '@ark-ui/react': 5.39.0
   '@zag-js/interact-outside': 1.43.3
   markdown-it@<14.3.3: ^14.3.3
@@ -427,8 +427,8 @@ importers:
   src/apps/hoftroedel:
     dependencies:
       '@chakra-ui/react':
-        specifier: 3.37.0
-        version: 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        specifier: 3.38.0
+        version: 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@fontsource-variable/noto-sans':
         specifier: ^5.3.0
         version: 5.3.0
@@ -510,8 +510,8 @@ packages:
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
 
-  '@chakra-ui/react@3.37.0':
-    resolution: {integrity: sha512-TaFju5LTT7GEZ8brcyZOhM7fNN54tJ/rMaMFvUAD7UE8tsUJb/j3zCUYPjchkoVXD1vinXtN9S31cp2QcOTUPg==}
+  '@chakra-ui/react@3.38.0':
+    resolution: {integrity: sha512-efRtfYR7jntc/UF0Xzh4v2vsoMKIXP8s+AdLgZa5uFhYYAGaWIQJL4QbrfRFaotbtJuLKOuxB5VUl5aMb7Lp0A==}
     peerDependencies:
       '@emotion/react': '>=11'
       react: '>=18'
@@ -3589,7 +3589,7 @@ snapshots:
       hashery: 1.5.1
       keyv: 5.6.0
 
-  '@chakra-ui/react@3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
+  '@chakra-ui/react@3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
       '@ark-ui/react': 5.39.0(patch_hash=9330cbb0bbd280b4c310e443cd1879da15ad0994f24c7265e15a2a6629356de8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@emotion/is-prop-valid': 1.4.0
@@ -3948,7 +3948,7 @@ snapshots:
 
   '@open-pioneer/base-theme@4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
     transitivePeerDependencies:
       - '@emotion/react'
       - react
@@ -4003,7 +4003,7 @@ snapshots:
   '@open-pioneer/chakra-snippets@4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))':
     dependencies:
       '@ark-ui/react': 5.39.0(patch_hash=9330cbb0bbd280b4c310e443cd1879da15ad0994f24c7265e15a2a6629356de8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@open-pioneer/runtime': 4.9.0(@types/react@19.3.0)
       react: 19.3.1
       react-icons: 5.7.0(react@19.3.1)
@@ -4038,7 +4038,7 @@ snapshots:
 
   '@open-pioneer/geolocation@1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(geotiff@3.1.0-beta.0)(react-dom@19.3.1(react@19.3.1))':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@conterra/reactivity-core': 0.8.9
       '@open-pioneer/core': 4.9.0
       '@open-pioneer/map': 1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(geotiff@3.1.0-beta.0)
@@ -4065,7 +4065,7 @@ snapshots:
 
   '@open-pioneer/map-navigation@1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(geotiff@3.1.0-beta.0)(react-dom@19.3.1(react@19.3.1))':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@conterra/reactivity-core': 0.8.9
       '@open-pioneer/map': 1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(geotiff@3.1.0-beta.0)
       '@open-pioneer/map-ui-components': 1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))
@@ -4083,7 +4083,7 @@ snapshots:
 
   '@open-pioneer/map-ui-components@1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@open-pioneer/chakra-snippets': 4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))
       '@open-pioneer/react-utils': 4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))
       react: 19.3.1
@@ -4094,7 +4094,7 @@ snapshots:
 
   '@open-pioneer/map@1.6.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(geotiff@3.1.0-beta.0)':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@conterra/reactivity-core': 0.8.9
       '@conterra/reactivity-events': 0.8.9
       '@esri/arcgis-html-sanitizer': 4.2.0
@@ -4116,7 +4116,7 @@ snapshots:
 
   '@open-pioneer/notifier@4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@open-pioneer/core': 4.9.0
       '@open-pioneer/runtime': 4.9.0(@types/react@19.3.0)
       react: 19.3.1
@@ -4128,7 +4128,7 @@ snapshots:
 
   '@open-pioneer/react-utils@4.9.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@conterra/reactivity-core': 0.8.9
       '@open-pioneer/core': 4.9.0
       '@open-pioneer/reactivity': 4.9.0
@@ -4144,7 +4144,7 @@ snapshots:
 
   '@open-pioneer/runtime@4.9.0(@types/react@19.3.0)':
     dependencies:
-      '@chakra-ui/react': 3.37.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@chakra-ui/react': 3.38.0(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@conterra/reactivity-core': 0.8.9
       '@emotion/cache': 11.14.0
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.3.1)
