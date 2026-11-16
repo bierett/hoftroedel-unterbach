@@ -63,5 +63,14 @@ als Artefakt hoch. Die Smoke-Tests sind Teil des bestehenden verpflichtenden PR-
 
 ## Unterseiten
 
-Die App nutzt React Router mit Hash-Routing: `#/impressum` und `#/datenschutz`.
-Dadurch sind auf statischem Hosting keine zusätzlichen Server-Rewrites erforderlich.
+Die App nutzt React Router mit Browser-Routing: `/karte`, `/kontakt`, `/impressum` und `/datenschutz`.
+Für direkte Aufrufe und Neuladen einer Unterseite muss der Webserver die `index.html` ausliefern.
+
+Für Apache liegt die passende Konfiguration in `src/public/.htaccess`; sie wird beim Build
+nach `dist/www/.htaccess` kopiert. Beim Hochladen auch diese versteckte Datei übertragen.
+Apache muss `mod_rewrite` und Rewrite-Regeln in `.htaccess` erlauben (`AllowOverride FileInfo`).
+Vorhandene Dateien und Verzeichnisse, etwa Flyer-Downloads, werden weiterhin direkt ausgeliefert.
+
+Standardmäßig wird die Website im Stammverzeichnis der Domain bereitgestellt (`base: "/"`).
+Bei Hosting in einem Unterverzeichnis den Vite-Basispfad entsprechend setzen, z. B.
+`pnpm build --base=/hoftroedel/`; der Router übernimmt diesen Pfad als `basename`.

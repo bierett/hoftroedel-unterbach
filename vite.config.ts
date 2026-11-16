@@ -23,8 +23,8 @@ export default defineConfig(({ mode }) => {
         // Load .env files from this directory instead of `root`.
         envDir: import.meta.dirname,
 
-        // Generates relative urls in html etc.
-        base: "./",
+        // Absolute asset URLs also work when a browser route is opened directly.
+        base: "/",
 
         // Vite's build output is written to dist/www
         build: {
