@@ -33,14 +33,14 @@ catalog:
   "@testing-library/dom": ^10.4.2
   "@testing-library/jest-dom": ^7.0.1
   "@testing-library/react": ^16.3.3
-  "@testing-library/user-event": ^14.6.8
+  "@testing-library/user-event": ^14.6.10
   "@types/js-yaml": ^4.0.9
   "@types/node": ^24.19.2
   "@types/react": ^19.3.0
   "@types/react-dom": ^19.3.0
   "@vitejs/plugin-react": "^6.1.2"
-  "@vitest/browser-playwright": ^5.0.5
-  "@vitest/browser-preview": ^5.0.5
+  "@vitest/browser-playwright": ^5.1.0
+  "@vitest/browser-preview": ^5.1.0
   fast-glob: ^3.3.3
   happy-dom: ^21.0.4
   husky: ^9.1.7
@@ -49,7 +49,7 @@ catalog:
   lint-staged: ^17.6.0
   oxlint: ^1.89.0
   oxfmt: ^0.78.0
-  playwright: ^1.64.1
+  playwright: ^1.65.0
   resize-observer-polyfill: ^1.5.1
   rimraf: ^6.1.4
   sass: ^1.106.1
@@ -57,7 +57,7 @@ catalog:
   typescript: ^6.0.3
   vitest-browser-react: ^2.3.0
   vite: ^8.3.6
-  vitest: ^5.0.5
+  vitest: ^5.1.0
 
 overrides:
   # We don't actually use the babel plugin.
