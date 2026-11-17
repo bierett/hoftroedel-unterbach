@@ -19,6 +19,29 @@ pnpm dev       # Entwicklungsserver starten (http://localhost:5173/)
 pnpm build     # Produktionsbuild nach dist/www
 ```
 
+## Veranstaltungstermin und SEO
+
+Der Termin wird zentral in `src/event.ts` gepflegt. Für den nächsten Hoftrödel nur `date`
+im Format `YYYY-MM-DD` ändern, zum Beispiel `"2027-09-18"`, anschließend neu bauen und veröffentlichen.
+Wochentag, angezeigtes Datum, Anmeldefrist am Vortag, Anmelde-E-Mail, Seitentitel,
+Beschreibungen und strukturierte Veranstaltungsdaten werden daraus berechnet.
+Bei Bedarf sind dort auch Beginn (`startTime`), Fristabstand (`registrationDaysBefore`),
+Zeitzone und öffentliche Website-URL einstellbar. Nach Änderungen den Entwicklungsserver neu starten.
+
+Beim Build entstehen Seitentitel, Canonical-URLs, Open-Graph-/Twitter-Vorschauen,
+JSON-LD-Veranstaltungsdaten, `robots.txt`, `sitemap.xml` sowie eigene HTML-Einstiegsdateien
+für die Unterseiten. Metadaten sind damit schon ohne JavaScript im HTML vorhanden und werden
+bei Navigation im Browser aktualisiert. Den gesamten Inhalt von `dist/www` veröffentlichen.
+
+Die Startseite ist für Suchmaschinen freigegeben. Kontakt, Impressum und Datenschutz enthalten
+noch Platzhalter, die Karte enthält Demo-Standorte. Deshalb sind diese Unterseiten vorerst
+mit `noindex,follow` markiert und fehlen in der Sitemap. Sobald die Inhalte fertig sind,
+das jeweilige `index`-Feld in `src/seo.ts` auf `true` setzen.
+
+Die Flyer-PDF und -Bilder werden nicht automatisch verändert. Enthalten sie einen Termin,
+müssen sie separat aktualisiert werden; das PNG dient auch als Vorschau beim Teilen von Links.
+Strukturierte Daten garantieren keine besondere Darstellung in Suchmaschinen.
+
 ## Flyer zum Herunterladen
 
 Der Bereich „Hoftrödel zum Weitersagen“ auf der Startseite lädt seine Dateien aus

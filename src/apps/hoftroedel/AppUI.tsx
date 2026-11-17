@@ -11,10 +11,12 @@ import { HomePage } from "./components/HomePage";
 import { LegalPage } from "./components/LegalPage";
 import { MapSection } from "./components/MapSection";
 import { RegistrationDraftProvider } from "./components/RegistrationDraft";
+import { SeoMetadata } from "./components/SeoMetadata";
 
 export function AppUI() {
     return (
         <BrowserRouter basename={import.meta.env.BASE_URL}>
+            <SeoMetadata />
             <Notifier />
             <RegistrationDraftProvider>
                 <AppLayout />

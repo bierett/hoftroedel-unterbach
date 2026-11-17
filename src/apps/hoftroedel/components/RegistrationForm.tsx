@@ -4,6 +4,7 @@
 import { Box, Button, chakra, Field, Input, Stack, Text } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
 import { type FormEvent, useId, useState } from "react";
+import { eventDates } from "../../../event";
 import { getRegistrationEmail } from "../registrationEmail";
 import { AddressAutocomplete } from "./AddressAutocomplete";
 import { useRegistrationDraft } from "./RegistrationDraft";
@@ -13,7 +14,7 @@ export function RegistrationForm() {
     const { draft, setDraft } = useRegistrationDraft();
     const noteId = useId();
     const [prepared, setPrepared] = useState(false);
-    const message = (id: string) => intl.formatMessage({ id: "registration." + id });
+    const message = (id: string) => intl.formatMessage({ id: "registration." + id }, eventDates);
     const prepareEmail = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);

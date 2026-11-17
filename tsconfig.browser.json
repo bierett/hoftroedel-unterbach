@@ -13,6 +13,7 @@
         "moduleResolution": "Bundler",
         "moduleDetection": "force",
         "allowJs": false,
+        "allowImportingTsExtensions": true,
         "jsx": "react-jsx",
 
         "strict": true,

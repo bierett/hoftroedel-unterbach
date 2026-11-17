@@ -3,6 +3,7 @@
 
 import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
+import { eventDates } from "../../../event";
 import { RegistrationDialog } from "./RegistrationDialog";
 
 export function EventDetails() {
@@ -49,7 +50,7 @@ export function EventDetails() {
                 >
                     {intl.formatMessage({ id: "event.deadlineTitle" })}
                 </Heading>
-                <Text>{intl.formatMessage({ id: "event.deadline" })}</Text>
+                <Text>{intl.formatMessage({ id: "event.deadline" }, eventDates)}</Text>
             </Box>
             <Box as="section" aria-labelledby="event-map-title">
                 <Heading
