@@ -61,7 +61,7 @@ export function RegistrationForm() {
                             autoComplete="email"
                             required
                             placeholder={message("emailPlaceholder")}
-                            bg="hoftroedel.paper"
+                            bg="white"
                             borderColor="hoftroedel.line"
                             color="hoftroedel.ink"
                             minH="44px"

@@ -3,7 +3,7 @@
 
 /** Change date for the next event, then build and publish the website again. */
 export const eventConfig = {
-    date: "2026-09-19", // YYYY-MM-DD; weekday and registration deadline follow automatically.
+    date: "2027-09-01", // YYYY-MM-DD; weekday and registration deadline follow automatically.
     startTime: "11:00",
     registrationDaysBefore: 1,
     timeZone: "Europe/Berlin",

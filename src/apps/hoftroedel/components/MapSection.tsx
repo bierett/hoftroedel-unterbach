@@ -104,7 +104,7 @@ export function MapSection({ fullPage = false }: { fullPage?: boolean }) {
             display={fullPage ? "flex" : "block"}
             flexDirection="column"
             minH="0"
-            py={fullPage ? "0" : { base: "32px", md: "40px" }}
+            pt={fullPage ? "0" : { base: "32px", md: "40px" }}
         >
             <Flex
                 srOnly={fullPage}
@@ -117,15 +117,16 @@ export function MapSection({ fullPage = false }: { fullPage?: boolean }) {
                 <Heading
                     as={fullPage ? "h1" : "h2"}
                     fontFamily="heading"
-                    fontSize={{ base: "32px", md: fullPage ? "48px" : "36px" }}
-                    lineHeight="1.15"
+                    fontSize={{ base: fullPage ? "32px" : "28px", md: fullPage ? "48px" : "32px" }}
+                    lineHeight={fullPage ? "1.15" : "1.2"}
                 >
                     {intl.formatMessage({ id: "map.title" })}
                 </Heading>
             </Flex>
             <Text
                 display={fullPage ? "none" : "block"}
-                maxW="520px"
+                maxW="760px"
+                fontSize={{ base: "15px", md: "16px" }}
                 lineHeight="1.8"
                 color="hoftroedel.muted"
                 mb="24px"

@@ -42,7 +42,7 @@ export function AddressAutocomplete({
                     required
                     minLength={5}
                     placeholder={intl.formatMessage({ id: "registration.addressPlaceholder" })}
-                    bg="hoftroedel.paper"
+                    bg="white"
                     color="hoftroedel.ink"
                     borderColor="hoftroedel.line"
                     minH="44px"
@@ -54,7 +54,7 @@ export function AddressAutocomplete({
             </Combobox.Control>
             <Combobox.Positioner>
                 <Combobox.Content
-                    bg="hoftroedel.paper"
+                    bg="white"
                     color="hoftroedel.ink"
                     border="1px solid"
                     borderColor="hoftroedel.line"

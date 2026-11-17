@@ -25,7 +25,7 @@ export function MarkerPopover({
             w={sheet ? "100%" : undefined}
             filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"
             role="dialog"
-            aria-label={intl.formatMessage({ id: "map.demoLocation" })}
+            aria-label={intl.formatMessage({ id: "map.locationAddress" })}
             onKeyDown={(event) => {
                 if (event.key === "Escape") {
                     event.stopPropagation();
@@ -53,7 +53,7 @@ export function MarkerPopover({
                     gap="8px"
                 >
                     <Text fontSize="12px" fontWeight="700" lineHeight="1.5" whiteSpace="nowrap">
-                        {intl.formatMessage({ id: "map.demoTitle" })}
+                        {intl.formatMessage({ id: "map.locationTitle" })}
                     </Text>
                     <Button
                         ref={closeButton}
@@ -86,9 +86,6 @@ export function MarkerPopover({
                         overflowWrap="anywhere"
                     >
                         {address}
-                    </Text>
-                    <Text mt="8px" fontSize="12px" color="hoftroedel.muted">
-                        {intl.formatMessage({ id: "map.demoNotice" })}
                     </Text>
                 </Box>
             </Box>
