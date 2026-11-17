@@ -28,7 +28,7 @@ export function RegistrationDialog() {
             <Dialog.Backdrop />
             <Dialog.Positioner padding="16px">
                 <Dialog.Content
-                    bg="hoftroedel.paper"
+                    bg="white"
                     color="hoftroedel.ink"
                     maxW="520px"
                     w="100%"
