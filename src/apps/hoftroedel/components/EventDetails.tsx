@@ -12,7 +12,7 @@ export function EventDetails() {
         <Stack
             gap={{ base: "32px", md: "40px" }}
             maxW="760px"
-            py={{ base: "24px", md: "40px" }}
+            pt={{ base: "24px", md: "40px" }}
             fontSize={{ base: "15px", md: "16px" }}
             lineHeight="1.8"
             color="hoftroedel.muted"

@@ -46,7 +46,8 @@ export function FlyerSection() {
             as="section"
             aria-labelledby="flyer-title"
             maxW="760px"
-            py={{ base: "24px", md: "40px" }}
+            pt={{ base: "32px", md: "40px" }}
+            pb={{ base: "24px", md: "40px" }}
             fontSize={{ base: "15px", md: "16px" }}
             lineHeight="1.8"
         >

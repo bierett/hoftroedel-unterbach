@@ -7,7 +7,7 @@ import { useIntl } from "open-pioneer:react-hooks";
 export function ContactPage() {
     const intl = useIntl();
     return (
-        <Box maxW="520px" py={{ base: "32px", md: "75px" }} fontSize={{ base: "15px", md: "16px" }}>
+        <Box maxW="760px" py={{ base: "32px", md: "75px" }} fontSize={{ base: "15px", md: "16px" }}>
             <Heading
                 as="h1"
                 fontFamily="heading"

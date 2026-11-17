@@ -71,9 +71,8 @@ messages:
 
   map:
     title: Karte
-    demoTitle: Demo-Standort
-    demoNotice: Kein tatsächliches Hoftrödel-Angebot.
-    demoLocation: Demo-Standort – kein echtes Angebot
+    locationTitle: Standort
+    locationAddress: Standortadresse
     closeAddress: Adressanzeige schließen
     intro: Entdecke Unterbach auf der Karte. Die Markierungen zeigen Demo-Standorte und keine tatsächlichen Hoftrödel-Angebote. Klicke auf eine Gruppe, um die einzelnen Standorte zu sehen.
     open: Zur großen Karte
