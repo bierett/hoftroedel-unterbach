@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { expect, test } from "playwright/test";
+import { eventConfig, eventDates } from "../src/event";
 
 // Navigation steps must run sequentially in the same page.
 /* eslint-disable no-await-in-loop */
@@ -42,6 +43,51 @@ test("homepage and navigation work", async ({ page }) => {
     }
     await page.getByRole("banner").getByRole("link", { name: "Hoftrödel Unterbach" }).click();
     await expect(page.getByRole("heading", { level: 1 })).toContainText("Unterbacher");
+});
+
+test("event dates and SEO metadata follow the shared configuration", async ({ page, request }) => {
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(eventDates.eventShortDate);
+    await expect(page.locator('section[aria-labelledby="deadline-title"]')).toContainText(
+        eventDates.deadline
+    );
+    await expect(page).toHaveTitle(`Hoftrödel Unterbach · ${eventDates.eventDate}`);
+    await expect(page.locator('head link[rel="canonical"]')).toHaveAttribute(
+        "href",
+        eventConfig.siteUrl
+    );
+    const root = await request.get("/");
+    const html = await root.text();
+    expect(html).toContain(eventDates.eventDate);
+    const schemaText = html.match(
+        /<script id="event-schema" type="application\/ld\+json">([\s\S]*?)<\/script>/
+    )?.[1];
+    if (!schemaText) throw new Error("Missing event schema in server HTML");
+    const schema = JSON.parse(schemaText);
+    expect(schema.startDate).toBe(eventDates.startDate);
+    for (const path of ["kontakt", "impressum", "datenschutz", "karte"]) {
+        const response = await request.get(`/${path}/`);
+        expect(response.ok()).toBe(true);
+        const source = await response.text();
+        expect(source).toContain(`${eventConfig.siteUrl}${path}/`);
+        expect(source).toContain('content="noindex,follow"');
+        expect(source).not.toContain('id="event-schema"');
+    }
+    await page
+        .getByRole("navigation", { name: "Hauptnavigation" })
+        .getByRole("link", { name: "Kontakt", exact: true })
+        .click();
+    await expect(page).toHaveTitle("Kontakt · Hoftrödel Unterbach");
+    await expect(page.locator('head meta[name="robots"]')).toHaveAttribute(
+        "content",
+        "noindex,follow"
+    );
+    await expect(page.locator("#event-schema")).toHaveCount(0);
+    expect(await (await request.get("/robots.txt")).text()).toContain(
+        `${eventConfig.siteUrl}sitemap.xml`
+    );
+    const sitemap = await (await request.get("/sitemap.xml")).text();
+    expect(sitemap).toContain(`<loc>${eventConfig.siteUrl}</loc>`);
+    expect(sitemap).not.toContain("/karte/");
 });
 
 test("map renders and can be expanded and collapsed", async ({ page }) => {

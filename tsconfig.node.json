@@ -26,6 +26,8 @@
         "oxfmt.config.ts",
         "playwright.config.ts",
         "e2e",
-        "support"
+        "support",
+        "src/event.ts",
+        "src/seo.ts"
     ]
 }

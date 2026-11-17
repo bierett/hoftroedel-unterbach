@@ -3,6 +3,7 @@
 
 import { Box, Heading, Text, chakra } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
+import { eventDates } from "../../../event";
 
 export function HeroComponent() {
     const intl = useIntl();
@@ -22,7 +23,7 @@ export function HeroComponent() {
                 textTransform="uppercase"
             >
                 <Box w="7px" h="7px" borderRadius="full" bg="hoftroedel.accent" />
-                {intl.formatMessage({ id: "eyebrow" })}
+                {intl.formatMessage({ id: "eyebrow" }, eventDates)}
             </Text>
             <Heading
                 as="h1"
@@ -44,7 +45,7 @@ export function HeroComponent() {
                 {intl.formatMessage({ id: "title.line2" })}
                 <br />
                 <chakra.em color="hoftroedel.accent" fontStyle="italic" fontWeight="400">
-                    {intl.formatMessage({ id: "title.line3" })}
+                    {intl.formatMessage({ id: "title.line3" }, eventDates)}
                 </chakra.em>
             </Heading>
             <Text
@@ -54,7 +55,7 @@ export function HeroComponent() {
                 lineHeight="1.8"
                 color="hoftroedel.muted"
             >
-                {intl.formatMessage({ id: "intro" })}
+                {intl.formatMessage({ id: "intro" }, eventDates)}
             </Text>
         </section>
     );

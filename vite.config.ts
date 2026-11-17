@@ -9,6 +9,7 @@ import react from "@vitejs/plugin-react";
 import { playwright } from "@vitest/browser-playwright";
 import { defineConfig, UserConfig } from "vite";
 import { dependencySourcemaps } from "./support/vite/dependency-sourcemaps.ts";
+import { eventSeo } from "./support/vite/seo.ts";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -61,7 +62,8 @@ export default defineConfig(({ mode }) => {
                 // Apps to distribute as .js files for embedded use cases
                 apps: []
             }),
-            react()
+            react(),
+            eventSeo()
         ],
 
         // Ignore irrelevant deprecations.

@@ -4,6 +4,7 @@
 import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
 import { useEffect, useState } from "react";
+import { eventDates } from "../../../event";
 
 const formats = ["pdf", "png"] as const;
 const flyerUrls = {
@@ -122,7 +123,7 @@ export function FlyerSection() {
                                 </Text>
                                 <Box w="40px" h="2px" bg="hoftroedel.accent" />
                                 <Text fontSize="12px" fontWeight="700">
-                                    {intl.formatMessage({ id: "eyebrow" })}
+                                    {intl.formatMessage({ id: "eyebrow" }, eventDates)}
                                 </Text>
                                 <Text fontSize="11px" color="hoftroedel.muted" lineHeight="1.7">
                                     {message("previewTagline")}
